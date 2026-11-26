@@ -1,0 +1,257 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(133, 52, 52);
+    padding: 0px 30px;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+
+}
+
+nav h1 {
+    color: wheat;
+}
+
+nav li a {
+    color: wheat;
+    text-decoration: none;
+
+
+}
+
+nav li a.active {
+    border-bottom: 2px solid wheat;
+    padding-bottom: 5px;
+}
+
+.home {
+    background-image: url(https://capetowninsider.co.za/images/posts/best-hikes-views-cape-town.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 500px;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.home h1,
+.home p {
+    color: wheat;
+}
+
+.btn {
+    border-radius: 20px;
+    background-color: maroon;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.about {
+    background-image: none;
+    background-color: wheat;
+    min-height: 75vh;
+    padding: 40px;
+
+}
+
+.about-content {
+    display: flex;
+}
+
+.about-content p,
+.about img {
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.about h1 {
+    color: black;
+
+}
+
+.contact {
+    background-color: wheat;
+    min-height: 50vh;
+    padding: 10px;
+}
+
+.contact h1,
+.contact p {
+    color: black;
+}
+
+.foam {
+    padding: 1px;
+    background-color: wheat;
+}
+
+.spots {
+
+    background-color: wheat;
+    padding: 20px;
+
+}
+
+.spots h1 {
+    color: black;
+    text-align: center;
+    font-size: 32px;
+}
+
+.spots-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.spot {
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
+
+
+}
+
+
+.spot img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.travel-tips {
+    background-color: wheat;
+    min-height: 85vh;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.travel-tips h1 {
+    color: black;
+    font-size: 32px;
+
+}
+
+.tips-images {
+    position: relative;
+    height: 300px;
+}
+
+.tips-images img {
+    width: 48%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tip-one {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+.tip-two {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+
+}
+
+.tips h3 {
+    font-size: 20px;
+
+
+}
+
+.tips {
+
+    padding: 15px 0;
+    border-bottom: 1px solid grey;
+}
+
+@media screen and (max-width: 785px) {
+    nav {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    nav ul {
+        position: static;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .home {
+        min-height: 400px;
+        background-attachment: scroll;
+        background-position: 65% center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+    }
+
+    .about {
+        padding: 15px;
+
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about img {
+        height: auto;
+        width: 100%;
+
+    }
+
+    .contact {
+        padding: 15px;
+    }
+
+    .spots-container {
+        grid-template-columns: 1fr;
+    }
+
+    .spot {
+        flex-direction: column;
+    }
+
+    .spot img {
+        height: auto;
+        width: 100%;
+    }
+
+    .travel-tips {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+
+}
