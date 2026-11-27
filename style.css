@@ -59,26 +59,35 @@ nav li a.active {
     text-decoration: none;
 }
 
-.about {
+.about-content {
     background-image: none;
     background-color: wheat;
-    min-height: 75vh;
+    min-height: 85vh;
     padding: 40px;
 
 }
 
-.about-content {
+.about-cantainer {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.about-content p,
-.about img {
+.about-cantainer img {
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.about-cantainer p {
     font-size: 20px;
     text-align: center;
-    border-radius: 20px;
+
 }
 
-.about h1 {
+.about-content {
     color: black;
 
 }
